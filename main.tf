@@ -100,7 +100,7 @@ module "aws_config" {
   source         = "./modules/aws_config"
   s3_bucket_name = module.s3.s3_name_with_config_logs
 
-  s3_key_prefix                 = "aws-config/"
+  s3_key_prefix                 = "aws-config"
   include_global_resource_types = true
   delivery_frequency_hours      = 24 # snapshots daily
 
